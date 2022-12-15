@@ -1,4 +1,4 @@
-package com.example.assignment2.data
+package com.example.assignment2.data.model
 
 data class Definition(
     val type: String,

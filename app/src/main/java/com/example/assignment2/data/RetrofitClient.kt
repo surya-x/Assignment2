@@ -1,4 +1,4 @@
-package com.example.assignment2
+package com.example.assignment2.data
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

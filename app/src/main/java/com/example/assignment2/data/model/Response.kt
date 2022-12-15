@@ -1,16 +1,16 @@
-package com.example.assignment2.data
+package com.example.assignment2.data.model
 
 import com.google.gson.annotations.SerializedName
 
 data class Response(
 
-	@field:SerializedName("pronunciation")
+    @field:SerializedName("pronunciation")
 	val pronunciation: String? = null,
 
-	@field:SerializedName("definitions")
+    @field:SerializedName("definitions")
 	val definitions: List<DefinitionsItem?>? = null,
 
-	@field:SerializedName("word")
+    @field:SerializedName("word")
 	val word: String? = null
 )
 

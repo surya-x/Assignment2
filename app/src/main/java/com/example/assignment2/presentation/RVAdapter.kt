@@ -1,4 +1,4 @@
-package com.example.assignment2
+package com.example.assignment2.presentation
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.assignment2.data.Definition
+import com.example.assignment2.R
+import com.example.assignment2.data.model.Definition
 
 class RVAdapter(private val context: Context) : RecyclerView.Adapter<RVAdapter.MyViewHolder>() {
 
@@ -17,7 +18,7 @@ class RVAdapter(private val context: Context) : RecyclerView.Adapter<RVAdapter.M
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val view = LayoutInflater.from(context).inflate( R.layout.item, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item, parent, false)
         return MyViewHolder(view)
     }
 

@@ -1,14 +1,15 @@
-package com.example.assignment2
+package com.example.assignment2.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.assignment2.data.Definition
-import com.example.assignment2.data.Response
+import com.example.assignment2.data.repository.Repository
+import com.example.assignment2.data.model.Definition
+import com.example.assignment2.data.model.Response
 
 class MainViewModel : ViewModel() {
 
-    val repository = Repository()
+    val repository = Repository()   // TODO: should be passed as constructor
 
     fun checkDefinition(input: String) : LiveData<Response> {
         val livedata = MutableLiveData<Response>()

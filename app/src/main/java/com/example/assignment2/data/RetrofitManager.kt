@@ -1,6 +1,7 @@
-package com.example.assignment2
+package com.example.assignment2.data
 
-import com.example.assignment2.data.Response
+import com.example.assignment2.data.model.Response
+import com.example.assignment2.data.api.RetrofitAPI
 import retrofit2.Call
 import retrofit2.Callback
 
